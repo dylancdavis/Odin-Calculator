@@ -130,24 +130,31 @@ body {
     grid-row: 4;
 }
 
-.clearButton.calcButton {
-    grid-column: 1;
-    grid-row: 4;
-    background-color: rgb(103, 96, 96);
-}
-
-.equalButton.calcButton {
-    grid-column: 3;
-    grid-row: 4;
-    background-color:rgb(96, 103, 96);
-}
-
 .calcButton {
     font-size: 36px;
-    background-color:rgb(96, 103, 103);
     border: 2px outset black;
     color: white;
     text-shadow: 2px 2px black;
     font-family: 'Electrolize';
     cursor: pointer;
+}
+
+.calcButton.clearButton {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: rgb(103, 96, 96);
+}
+
+.calcButton.equalButton {
+    grid-column: 3;
+    grid-row: 4;
+    background-color:rgb(96, 103, 96);
+}
+
+.calcButton.operatorButton {
+    background-color: rgb(98, 94, 106);
+}
+
+.calcButton.numButton {
+    background-color:rgb(96, 103, 103);
 }
